@@ -1,5 +1,5 @@
 //
-//  NJF_CityViewController.swift
+//  NJF_MineViewController.swift
 //  SwiftDemo
 //
 //  Created by niujf on 2019/4/13.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class NJF_CityViewController: UIViewController {
+class NJF_MineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+

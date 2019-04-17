@@ -19,12 +19,17 @@ class NJF_NavigationViewController: UINavigationController {
         //隐藏底部tabBar
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(imageName: "nav_btn_back_white", higImageName: "", size: .zero, target: self, action: #selector(navBack))
         }
         super.pushViewController(viewController, animated: animated)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    @objc func navBack() {
+        self.popViewController(animated: true)
     }
 }
 

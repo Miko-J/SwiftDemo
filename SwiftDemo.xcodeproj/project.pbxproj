@@ -22,6 +22,9 @@
 		882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F59842261BA1900B6B30E /* UIColor-Extension.swift */; };
 		882F59872261BBAA00B6B30E /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882F59862261BBAA00B6B30E /* TabBarItemConfig.plist */; };
 		882F598D2261D92A00B6B30E /* NSObject-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F598C2261D92A00B6B30E /* NSObject-Extension.swift */; };
+		88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */; };
+		88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */; };
+		88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		882F59842261BA1900B6B30E /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		882F59862261BBAA00B6B30E /* TabBarItemConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		882F598C2261D92A00B6B30E /* NSObject-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject-Extension.swift"; sourceTree = "<group>"; };
+		88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeTableview.swift; sourceTree = "<group>"; };
+		88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeUIKitDisViewController.swift; sourceTree = "<group>"; };
+		88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +165,8 @@
 		882F59752261AD6B00B6B30E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				882F597D2261ADB500B6B30E /* NJF_HomeViewController.swift */,
+				88D6097E22670C96009B81A5 /* ViewControllers */,
+				88D6097F22670C96009B81A5 /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,7 +190,8 @@
 		882F59782261AD7800B6B30E /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				882F59792261AD9900B6B30E /* NJF_MineViewController.swift */,
+				88D6097C22670C65009B81A5 /* ViewControllers */,
+				88D6097D22670C65009B81A5 /* Views */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -193,8 +201,41 @@
 			children = (
 				882F598C2261D92A00B6B30E /* NSObject-Extension.swift */,
 				882F59842261BA1900B6B30E /* UIColor-Extension.swift */,
+				88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88D6097C22670C65009B81A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				882F59792261AD9900B6B30E /* NJF_MineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88D6097D22670C65009B81A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88D6097E22670C96009B81A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				882F597D2261ADB500B6B30E /* NJF_HomeViewController.swift */,
+				88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88D6097F22670C96009B81A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				882F597E2261ADB500B6B30E /* NJF_HomeViewController.swift in Sources */,
+				88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */,
+				88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */,
 				882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */,
 				882F597A2261AD9900B6B30E /* NJF_MineViewController.swift in Sources */,
 				882F597C2261ADA800B6B30E /* NJF_MessageViewController.swift in Sources */,
 				882F59802261ADC300B6B30E /* NJF_CityViewController.swift in Sources */,
 				882F59742261A6E000B6B30E /* NJF_NavigationViewController.swift in Sources */,
+				88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */,
 				882F59722261A6BF00B6B30E /* NJF_TabBarViewController.swift in Sources */,
 				882F59432261A5EC00B6B30E /* AppDelegate.swift in Sources */,
 				882F598D2261D92A00B6B30E /* NSObject-Extension.swift in Sources */,
