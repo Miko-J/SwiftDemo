@@ -24,10 +24,17 @@ class NJF_NavigationViewController: UINavigationController {
         super.pushViewController(viewController, animated: animated)
     }
     
+    //改变状态栏颜色
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    //退出键盘
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //返回
     @objc func navBack() {
         self.popViewController(animated: true)
     }

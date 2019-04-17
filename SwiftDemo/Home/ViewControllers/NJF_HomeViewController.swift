@@ -22,10 +22,19 @@ class NJF_HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableview)
+        
+        //利用运行时机制查看所有的属性名称
+        /*
+         var count : UInt32 = 0
+         let ivars = class_copyIvarList(UITextView.self, &count)!
+         for i in 0..<count {
+         let ivar = ivars[Int(i)]
+         let name = ivar_getName(ivar)
+         print(String(cString: name!))
+         }
+         */
     }
 }
-
-
 
 extension NJF_HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

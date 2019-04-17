@@ -29,16 +29,45 @@ class NJF_HomeUIKitDisViewController: UIViewController {
 extension NJF_HomeUIKitDisViewController {
     fileprivate func kitDis() {
         if kitType == .UIKitTypeLable {
-            print("点击了lable")
+            let lable = UILabel()
+            lable.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            lable.text = "我是一个lable"
+            lable.textColor = UIColor.orange
+            lable.numberOfLines = 0
+            lable.textAlignment = .center
+            view.addSubview(lable)
         }
         if kitType == .UIKitTypeButton {
-            print("点击了button")
+            let btn = UIButton(type: .custom)
+            btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            btn.setTitle("我是btn", for: .normal)
+            btn.setTitleColor(UIColor.orange, for: .normal)
+            btn.addTarget(self, action: #selector(btnClick(btn:)), for: .touchUpInside)
+            btn.setBackgroundImage(UIImage(named: "btnBackImage"), for: .normal)
+            btn.adjustsImageWhenHighlighted = false
+            view.addSubview(btn)
         }
         if kitType == .UIKitTypeImageView {
-            print("点击了imageView")
+            let imageView = UIImageView(image: UIImage(named: "imageBack"))
+            imageView.frame = CGRect(x: 100, y: 100, width: 100, height: 100);
+            view.addSubview(imageView)
         }
         if kitType == .UIKitTypeTextView {
-            print("点击了textView")
+            let textView = UITextView()
+            textView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            textView.placeHolderLable?.text = "我是textView"
+            textView.placeHolderLable?.textColor = UIColor.green
+            textView.font = UIFont.systemFont(ofSize: 18)
+            textView.textColor = UIColor.orange
+            textView.layer.borderWidth = 1
+            textView.layer.borderColor = UIColor.orange.cgColor
+            view.addSubview(textView)
         }
+    }
+    
+    @objc fileprivate func btnClick(btn:UIButton){
+        print("点击了btn")
+        btn.isSelected = !btn.isSelected
+        btn.setTitleColor(btn.isSelected ? UIColor.red : UIColor.orange, for: .normal)
     }
 }

@@ -25,6 +25,7 @@
 		88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */; };
 		88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */; };
 		88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */; };
+		88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098D22673821009B81A5 /* UITextView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeTableview.swift; sourceTree = "<group>"; };
 		88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeUIKitDisViewController.swift; sourceTree = "<group>"; };
 		88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		88D6098D22673821009B81A5 /* UITextView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				882F598C2261D92A00B6B30E /* NSObject-Extension.swift */,
 				882F59842261BA1900B6B30E /* UIColor-Extension.swift */,
 				88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */,
+				88D6098D22673821009B81A5 /* UITextView-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */,
 				88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */,
 				882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */,
+				88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */,
 				882F597A2261AD9900B6B30E /* NJF_MineViewController.swift in Sources */,
 				882F597C2261ADA800B6B30E /* NJF_MessageViewController.swift in Sources */,
 				882F59802261ADC300B6B30E /* NJF_CityViewController.swift in Sources */,
