@@ -12,6 +12,7 @@ class NJF_NavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeSet()
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -20,5 +21,24 @@ class NJF_NavigationViewController: UINavigationController {
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
+extension NJF_NavigationViewController {
+    fileprivate func initializeSet() {
+        //设置字体大小和颜色
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18)]
+        //设置背景色
+        UINavigationBar.appearance().barTintColor = UIColor.orange
+        //设置半透明
+        UINavigationBar.appearance().isTranslucent = false
+        // 4.设置导航栏背景图片
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        // 5.设置导航栏阴影图片
+        UINavigationBar.appearance().shadowImage = UIImage()
     }
 }

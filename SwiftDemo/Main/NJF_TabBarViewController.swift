@@ -11,7 +11,7 @@ import UIKit
 fileprivate let TabBarItemInfo = "TabBarItemConfig.plist"
 
 class NJF_TabBarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -55,3 +55,4 @@ extension NJF_TabBarViewController {
         addChild(nav)
     }
 }
+
