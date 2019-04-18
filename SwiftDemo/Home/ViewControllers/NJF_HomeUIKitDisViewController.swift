@@ -54,10 +54,10 @@ extension NJF_HomeUIKitDisViewController {
         }
         if kitType == .UIKitTypeTextView {
             let textView = UITextView()
-            textView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-            textView.placeHolderLable?.text = "我是textView"
-            textView.placeHolderLable?.textColor = UIColor.green
-            textView.font = UIFont.systemFont(ofSize: 18)
+            textView.frame = CGRect(x: 50, y: 100, width: 200, height: 100)
+            textView.placeholder = "我是textView"
+            textView.placeholderColor = UIColor.green
+            textView.font = UIFont.systemFont(ofSize: 15)
             textView.textColor = UIColor.orange
             textView.layer.borderWidth = 1
             textView.layer.borderColor = UIColor.orange.cgColor
