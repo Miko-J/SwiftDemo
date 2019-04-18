@@ -26,6 +26,7 @@
 		88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */; };
 		88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098D22673821009B81A5 /* UITextView-Extension.swift */; };
 		88D60991226826F2009B81A5 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D60990226826F2009B81A5 /* GlobalDefine.swift */; };
+		88D60993226863BF009B81A5 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D60992226863BF009B81A5 /* UIView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		88D6098D22673821009B81A5 /* UITextView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
 		88D60990226826F2009B81A5 /* GlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
+		88D60992226863BF009B81A5 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				882F59842261BA1900B6B30E /* UIColor-Extension.swift */,
 				88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */,
 				88D6098D22673821009B81A5 /* UITextView-Extension.swift */,
+				88D60992226863BF009B81A5 /* UIView-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				882F59802261ADC300B6B30E /* NJF_CityViewController.swift in Sources */,
 				882F59742261A6E000B6B30E /* NJF_NavigationViewController.swift in Sources */,
 				88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */,
+				88D60993226863BF009B81A5 /* UIView-Extension.swift in Sources */,
 				882F59722261A6BF00B6B30E /* NJF_TabBarViewController.swift in Sources */,
 				882F59432261A5EC00B6B30E /* AppDelegate.swift in Sources */,
 				882F598D2261D92A00B6B30E /* NSObject-Extension.swift in Sources */,
