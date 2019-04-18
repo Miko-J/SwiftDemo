@@ -8,11 +8,17 @@
 
 import UIKit
 
+fileprivate let KItemMargin : CGFloat = 10
+fileprivate let KitemW = (KscreenWidth - KItemMargin * 3) / 2
+fileprivate let KitemH = KitemW * 6 / 5
+fileprivate let KCollectionCellID = "KCollectionCellID"
+
 enum UIKitType{
     case UIKitTypeLable
     case UIKitTypeButton
     case UIKitTypeImageView
     case UIKitTypeTextView
+    case UIKitTypeCollectionView
 }
 
 class NJF_HomeUIKitDisViewController: UIViewController {
@@ -55,7 +61,7 @@ extension NJF_HomeUIKitDisViewController {
         if kitType == .UIKitTypeTextView {
             let textView = UITextView()
             textView.frame = CGRect(x: 50, y: 100, width: 200, height: 100)
-            textView.placeholder = "我是textView"
+            textView.placeholder = "我是textView的placeholder"
             textView.placeholderColor = UIColor.green
             textView.font = UIFont.systemFont(ofSize: 15)
             textView.textColor = UIColor.orange
@@ -63,11 +69,39 @@ extension NJF_HomeUIKitDisViewController {
             textView.layer.borderColor = UIColor.orange.cgColor
             view.addSubview(textView)
         }
+        if kitType == .UIKitTypeCollectionView {
+            let layout = UICollectionViewFlowLayout()
+            layout.itemSize = CGSize(width: KitemW, height: KitemH)
+            layout.minimumLineSpacing = 0
+            layout.minimumInteritemSpacing = 0
+            layout.scrollDirection = .vertical
+            let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+            collectionView.contentInset = UIEdgeInsets(top: 0, left: KItemMargin, bottom: 0, right: KItemMargin)
+            collectionView.backgroundColor = UIColor.white
+            //注册cell
+            collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: KCollectionCellID)
+            collectionView.autoresizingMask = [.flexibleHeight, .flexibleHeight]
+            collectionView.dataSource = self
+            view.addSubview(collectionView)
+        }
     }
     
     @objc fileprivate func btnClick(btn:UIButton){
         print("点击了btn")
         btn.isSelected = !btn.isSelected
         btn.setTitleColor(btn.isSelected ? UIColor.red : UIColor.orange, for: .normal)
+    }
+}
+
+extension NJF_HomeUIKitDisViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KCollectionCellID, for: indexPath)
+        cell.backgroundColor = UIColor.andomColor()
+        return cell
     }
 }

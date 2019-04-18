@@ -17,7 +17,7 @@ class NJF_HomeViewController: UIViewController {
         return tableview;
     }()
     fileprivate lazy var dataArr : NSArray = {
-        return ["lable","button","imageView","textView"]
+        return ["lable","button","imageView","textView","collectionView"]
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +67,9 @@ extension NJF_HomeViewController : UITableViewDelegate {
         }
         if indexPath.row == 3 {
             uikitDisVC.kitType = .UIKitTypeTextView
+        }
+        if indexPath.row == 4 {
+            uikitDisVC.kitType = .UIKitTypeCollectionView
         }
         self.navigationController!.pushViewController(uikitDisVC, animated: true)
     }

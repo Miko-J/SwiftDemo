@@ -22,10 +22,10 @@
 		882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F59842261BA1900B6B30E /* UIColor-Extension.swift */; };
 		882F59872261BBAA00B6B30E /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 882F59862261BBAA00B6B30E /* TabBarItemConfig.plist */; };
 		882F598D2261D92A00B6B30E /* NSObject-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F598C2261D92A00B6B30E /* NSObject-Extension.swift */; };
-		88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */; };
 		88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */; };
 		88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */; };
 		88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6098D22673821009B81A5 /* UITextView-Extension.swift */; };
+		88D60991226826F2009B81A5 /* GlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D60990226826F2009B81A5 /* GlobalDefine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +67,10 @@
 		882F59842261BA1900B6B30E /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		882F59862261BBAA00B6B30E /* TabBarItemConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		882F598C2261D92A00B6B30E /* NSObject-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject-Extension.swift"; sourceTree = "<group>"; };
-		88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeTableview.swift; sourceTree = "<group>"; };
 		88D6098222671808009B81A5 /* NJF_HomeUIKitDisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeUIKitDisViewController.swift; sourceTree = "<group>"; };
 		88D609862267218C009B81A5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		88D6098D22673821009B81A5 /* UITextView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
+		88D60990226826F2009B81A5 /* GlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				882F59422261A5EC00B6B30E /* AppDelegate.swift */,
+				88D6098F226826B4009B81A5 /* Public */,
 				882F59812261B96400B6B30E /* Extensions */,
 				882F59782261AD7800B6B30E /* Mine */,
 				882F59772261AD7200B6B30E /* Message */,
@@ -236,9 +237,16 @@
 		88D6097F22670C96009B81A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				88D6098022670CB9009B81A5 /* NJF_HomeTableview.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		88D6098F226826B4009B81A5 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				88D60990226826F2009B81A5 /* GlobalDefine.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				882F597E2261ADB500B6B30E /* NJF_HomeViewController.swift in Sources */,
-				88D6098122670CB9009B81A5 /* NJF_HomeTableview.swift in Sources */,
 				88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */,
+				88D60991226826F2009B81A5 /* GlobalDefine.swift in Sources */,
 				882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */,
 				88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */,
 				882F597A2261AD9900B6B30E /* NJF_MineViewController.swift in Sources */,
