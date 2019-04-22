@@ -30,6 +30,10 @@ class NJF_HomeUIKitDisViewController: UIViewController {
         self.title = "UIKit控件的简单使用"
         kitDis()
     }
+    
+    deinit {
+        print("vc释放了")
+    }
 }
 
 extension NJF_HomeUIKitDisViewController {
