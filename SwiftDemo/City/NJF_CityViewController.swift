@@ -12,5 +12,6 @@ class NJF_CityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(rgb: 0x666666)
     }
 }
