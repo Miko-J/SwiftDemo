@@ -30,8 +30,8 @@ extension MoyaAPI: TargetType {
         switch self {
         case .register:
             return .post
-        default:
-            return .get
+//        default:
+//            return .get
         }
     }
     
@@ -48,7 +48,8 @@ extension MoyaAPI: TargetType {
     }
     
     var headers: [String : String]? {
-        return ["Content-Type":"application/json"]
+//        return ["Content-Type":"application/json"]
+        return nil
     }
     
 }

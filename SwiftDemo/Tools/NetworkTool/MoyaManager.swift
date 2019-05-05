@@ -11,7 +11,7 @@ import Moya
 import Alamofire
 
 /// 超时时长
-private var requestTimeOut:Double = 15
+private var requestTimeOut: Double = 15
 ///成功数据的回调
 typealias successCallback = ((Any) -> (Void))
 ///失败的回调
@@ -28,7 +28,7 @@ private let myEndpointClosure = { (target: MoyaAPI) -> Endpoint in
         task: target.task,
         httpHeaderFields: target.headers
     )
-    requestTimeOut = 15 //按照项目需求针对单个API设置不同的超时时长
+//    requestTimeOut = 15 //按照项目需求针对单个API设置不同的超时时长
     return endpoint
 }
 
@@ -70,7 +70,7 @@ func NetworkRequest(_ target: MoyaAPI, completion: @escaping successCallback, fa
     Provider.request(target) { (result) in
         switch result {
             
-        case let.success(response):
+        case let .success(response):
             do {
                 //转JSON
                 let responseObject = try JSONSerialization.jsonObject(with: response.data)
@@ -82,7 +82,7 @@ func NetworkRequest(_ target: MoyaAPI, completion: @escaping successCallback, fa
             } catch {
                 
             }
-        case let.failure(error):
+        case let .failure(error):
              failed!(error.localizedDescription)
         }
     }
