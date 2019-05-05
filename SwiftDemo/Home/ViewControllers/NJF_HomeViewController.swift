@@ -8,6 +8,8 @@
 
 import UIKit
 
+fileprivate let homeCellID = "homeCellID"
+
 class NJF_HomeViewController: UIViewController {
    //mark - 懒加载
     fileprivate lazy var tableview : UITableView = {[unowned self] in
@@ -42,13 +44,9 @@ extension NJF_HomeViewController : UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellID = "cellID"
-        var cell = tableview.dequeueReusableCell(withIdentifier: cellID)
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
-        }
-        cell?.textLabel?.text = dataArr[indexPath.row] as? String
-        return  cell!
+        let cell = NJF_HomeTableViewCell.homeCellWithTableView(tableview) as? NJF_HomeTableViewCell
+        cell?.testLable?.text = dataArr[indexPath.row] as? String
+        return cell!
     }
 }
 

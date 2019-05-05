@@ -31,6 +31,8 @@
 		88FDDE6B22759F1200E263B2 /* MoyaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDDE6A22759F1200E263B2 /* MoyaApi.swift */; };
 		88FDDE6D2275A05300E263B2 /* MoyaApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDDE6C2275A05300E263B2 /* MoyaApiConfig.swift */; };
 		88FDDE6F2275A49A00E263B2 /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDDE6E2275A49A00E263B2 /* MoyaManager.swift */; };
+		88FDDE72227EDF2E00E263B2 /* NJF_MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDDE71227EDF2E00E263B2 /* NJF_MineView.swift */; };
+		88FDDE76227EE59200E263B2 /* NJF_HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDDE75227EE59200E263B2 /* NJF_HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		88FDDE6A22759F1200E263B2 /* MoyaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaApi.swift; sourceTree = "<group>"; };
 		88FDDE6C2275A05300E263B2 /* MoyaApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaApiConfig.swift; sourceTree = "<group>"; };
 		88FDDE6E2275A49A00E263B2 /* MoyaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
+		88FDDE71227EDF2E00E263B2 /* NJF_MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_MineView.swift; sourceTree = "<group>"; };
+		88FDDE75227EE59200E263B2 /* NJF_HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJF_HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8B18CEB7E86896ED136BBE41 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A3EA4B3BE97E57227B0EAB97 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A35ECDCE39DFFD323EE032 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		88D6097D22670C65009B81A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88FDDE71227EDF2E00E263B2 /* NJF_MineView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 		88D6097F22670C96009B81A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88FDDE75227EE59200E263B2 /* NJF_HomeTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 				88D609872267218C009B81A5 /* UIBarButtonItem-Extension.swift in Sources */,
 				88D60991226826F2009B81A5 /* GlobalDefine.swift in Sources */,
 				882F59852261BA1900B6B30E /* UIColor-Extension.swift in Sources */,
+				88FDDE72227EDF2E00E263B2 /* NJF_MineView.swift in Sources */,
 				88FDDE6D2275A05300E263B2 /* MoyaApiConfig.swift in Sources */,
 				88FDDE6F2275A49A00E263B2 /* MoyaManager.swift in Sources */,
 				88D6098E22673821009B81A5 /* UITextView-Extension.swift in Sources */,
@@ -499,6 +506,7 @@
 				882F59802261ADC300B6B30E /* NJF_CityViewController.swift in Sources */,
 				882F59742261A6E000B6B30E /* NJF_NavigationViewController.swift in Sources */,
 				88D6098322671808009B81A5 /* NJF_HomeUIKitDisViewController.swift in Sources */,
+				88FDDE76227EE59200E263B2 /* NJF_HomeTableViewCell.swift in Sources */,
 				88D60993226863BF009B81A5 /* UIView-Extension.swift in Sources */,
 				882F59722261A6BF00B6B30E /* NJF_TabBarViewController.swift in Sources */,
 				88FDDE6B22759F1200E263B2 /* MoyaApi.swift in Sources */,

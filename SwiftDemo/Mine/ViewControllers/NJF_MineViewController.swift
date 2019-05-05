@@ -10,8 +10,14 @@ import UIKit
 
 class NJF_MineViewController: UIViewController {
 
+    fileprivate lazy var mineView: NJF_MineView = {
+        let mineView = NJF_MineView()
+        return mineView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(mineView)
     }
 }
 
