@@ -12,6 +12,7 @@ class NJF_MineViewController: UIViewController {
 
     fileprivate lazy var mineView: NJF_MineView = {
         let mineView = NJF_MineView()
+        mineView.testStr = "这是自定义view"
         return mineView
     }()
     

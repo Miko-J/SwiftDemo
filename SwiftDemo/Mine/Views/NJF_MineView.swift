@@ -9,10 +9,15 @@
 import UIKit
 
 class NJF_MineView: UIView {
+    
+    var testStr: String? {
+        didSet {
+            testLable.text = testStr
+        }
+    }
 
     fileprivate lazy var testLable : UILabel = {
         let testLable = UILabel()
-        testLable.text = "这是自定义view"
         testLable.textColor = UIColor.green
         return testLable;
         }()
