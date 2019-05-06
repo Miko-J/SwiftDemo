@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class NJF_MineView: UIView {
     
@@ -29,7 +30,10 @@ class NJF_MineView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        testLable.frame = CGRect(x: 50, y: 50, width: 200, height: 30)
+        testLable.snp.makeConstraints { (make) in
+            make.size.equalTo(200)
+            make.center.equalToSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

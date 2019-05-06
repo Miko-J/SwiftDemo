@@ -19,6 +19,9 @@ class NJF_MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(mineView)
+        mineView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
 }
 
